@@ -5,7 +5,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Portfolio/',
+  base: '/Lazygraphite/',
   plugins: [react(),tailwindcss()],
   resolve:{
     alias:{
