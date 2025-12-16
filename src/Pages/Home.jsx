@@ -8,6 +8,7 @@ import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import {AuroraBackground} from "../components/AuroraBackground";
 import { CloudBackground } from "../components/CloudBackground";
+import { PosterssSection } from "../components/PostersSection";
 
 
 export const Home = () =>{
@@ -28,6 +29,7 @@ export const Home = () =>{
         <HeroSection/>
         <AboutSection/>  
         <ProjectsSection/> 
+        <PosterssSection/>
         <ContactSection />
        </main>
 

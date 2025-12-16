@@ -39,7 +39,7 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Digital Art</h4>
-                                <p className="text-muted-foreground">Creating digital paintings that speak for itself.</p>
+                                <p className="text-muted-foreground">Creating digital paintings that speaks for itself.</p>
 
                             </div>
                         </div>
@@ -52,7 +52,7 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Animations</h4>
-                                <p className="text-muted-foreground">Creating short stories that conveys feelings more that a story.</p>
+                                <p className="text-muted-foreground">Creating short stories that conveys feelings more than a story.</p>
 
                             </div>
                         </div>

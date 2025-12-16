@@ -1,6 +1,18 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "ArtistSerif";
+  src: url("/src/assets/fonts/Bartex-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 @theme {
+
+  --font-artist: "ArtistSerif", serif;
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
@@ -337,6 +349,10 @@ individual cloud
   animation: pulse-subtle 2s ease-in-out infinite, star-move 10s ease-in-out infinite;
 
 }
+@utility font-artist {
+  font-family: var(--font-artist);
+}
+
 
 
 @utility meteor {
