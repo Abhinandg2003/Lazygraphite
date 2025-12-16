@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhinandg2003.github.io/Lazygraphite/sitemap.xml
