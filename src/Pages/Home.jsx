@@ -9,6 +9,8 @@ import { Footer } from "../components/Footer";
 import {AuroraBackground} from "../components/AuroraBackground";
 import { CloudBackground } from "../components/CloudBackground";
 import { PosterssSection } from "../components/PostersSection";
+import { JourneySection } from "../components/JourneySection";
+import { MyProcessSection } from "../components/MyProcessSection";
 
 
 export const Home = () =>{
@@ -28,7 +30,9 @@ export const Home = () =>{
        <main>
         <HeroSection/>
         <AboutSection/>  
+        <JourneySection/>
         <ProjectsSection/> 
+        <MyProcessSection/>
         <PosterssSection/>
         <ContactSection />
        </main>

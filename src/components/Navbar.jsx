@@ -6,7 +6,9 @@ import { ThemeToggle } from "./ThemeToggle";
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
+  { name: "Journey", href: "#journey" },
   { name: "Works", href: "#projects" },
+  { name: "Process", href: "#process" },
   { name: "Posters", href: "#posters" },
   { name: "Contact", href: "#contact" },
 ];
@@ -48,14 +50,14 @@ export const Navbar = () => {
       >
         <div className="container flex items-center justify-between">
           <a className="text-xl font-bold text-primary flex items-center cursor-pointer">
-            <span className="relative z-10 text-glow text-2xl">
+            <span className="relative z-10 text-glow text-3xl font-artist">
               <span className=" text-foreground ">Lazy</span>
               Graphite
             </span>
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -67,14 +69,14 @@ export const Navbar = () => {
             ))}
           </div>
 
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <ThemeToggle />
           </div>
 
           {/* Mobile Icon */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-foreground z-[9999]"
+            className="lg:hidden p-2 text-foreground z-[9999]"
           >
             <Menu size={26} />
           </button>
@@ -84,7 +86,7 @@ export const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-background/95 backdrop-blur-lg flex flex-col gap-10 items-center justify-center transition-all duration-300 md:hidden z-[9998]",
+          "fixed inset-0 bg-background/95 backdrop-blur-lg flex flex-col gap-10 items-center justify-center transition-all duration-300 lg:hidden z-[9998]",
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"

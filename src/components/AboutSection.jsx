@@ -1,4 +1,4 @@
-import { Briefcase, Code, User, Brush, Scissors } from "lucide-react";
+import { Briefcase, Code, User, Brush, Scissors, Film } from "lucide-react";
 
 export const AboutSection = () => {
     return <section id="about" className="py-24 px-4 relative">
@@ -21,8 +21,8 @@ export const AboutSection = () => {
                         Each piece is a small attempt to tell a story, even without words. </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                        <a href="#contact" className="cosmic-button">
-                            Contact Me
+                        <a href="#projects" className="cosmic-button">
+                            View my works
                         </a>
 
                     </div>
@@ -47,7 +47,7 @@ export const AboutSection = () => {
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Scissors className="h-6 w-6 text-primary" />
+                                <Film className="h-6 w-6 text-primary" />
 
                             </div>
                             <div className="text-left">
@@ -57,6 +57,7 @@ export const AboutSection = () => {
                             </div>
                         </div>
                     </div>
+
 
                 </div>
 

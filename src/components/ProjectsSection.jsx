@@ -18,7 +18,7 @@ const projects = [
         id: 3,
         title: "Kamala🪷",
         image: "Projects/Nalini.png",
-        demoUrl: "#",
+        demoUrl: "https://www.instagram.com/p/DSU0fKnD_sZ/",
     },
         {
         id: 4,

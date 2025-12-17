@@ -207,6 +207,20 @@ html.dark .cloud {
   animation: aurora-drift 40s ease-in-out infinite;
 }
 
+.mask-fade {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 60%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 60%,
+    transparent 100%
+  );
+}
+
+
 
 /* ☁️ Cloud Base */
 /* ☁️ Clouds base */
