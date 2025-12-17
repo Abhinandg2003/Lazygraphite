@@ -166,7 +166,7 @@ export const JourneySection = () => {
                         }`}
                     initial={false}
                     animate={{
-                        maxHeight: expanded ? 20000 : 160,
+                        maxHeight: expanded ? 40000 : 160,
                     }}
                     transition={{
                         duration: 0.6,
@@ -218,7 +218,7 @@ export const JourneySection = () => {
                                                     key={i}
                                                     className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
                                                 >
-                                                    <div className="relative overflow-hidden aspect-[3/4]">
+                                                    <div className="relative overflow-hidden aspect-[4/5]">
 
                                                         {m.kind === "image" && (
                                                             <img

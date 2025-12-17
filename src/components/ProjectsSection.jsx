@@ -101,7 +101,7 @@ export const ProjectsSection = () => {
       rel="noopener noreferrer"
       className="block"
     >
-      <div className="aspect-[3/4] overflow-hidden">
+      <div className="aspect-[4/5] overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
