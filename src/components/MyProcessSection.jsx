@@ -58,6 +58,8 @@ export const MyProcessSection = () => {
                             key={stage.src}
                             src={stage.src}
                             draggable={false}
+                            onDragStart={(e) => e.preventDefault()}
+                            onContextMenu={(e) => e.preventDefault()}
                             style={{ touchAction: "pan-y" }}
                             variants={crossDissolve}
                             initial="initial"
@@ -128,7 +130,7 @@ export const MyProcessSection = () => {
                             onClick={() => setIndex(i)}
                             className={`h-2 w-2 rounded-full transition-all ${i === index
                                 ? "bg-primary scale-125"
-                                : "bg-muted-foreground/40 hover:bg-muted-foreground"
+                                : "bg-foreground/40 hover:bg-muted-foreground"
                                 }`}
                         />
                     ))}

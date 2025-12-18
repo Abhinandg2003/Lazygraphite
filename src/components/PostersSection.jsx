@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink, Github, Instagram ,Download } from "lucide-react";
+import { ArrowRight, ExternalLink, Github, Instagram, Download } from "lucide-react";
 
 
 const posters = [
@@ -65,18 +65,22 @@ export const PosterssSection = () => {
                             <div className="aspect-[4/5] overflow-hidden">
                                 <img
                                     src={poster.image}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    draggable={false}
+                                    onDragStart={(e) => e.preventDefault()}
+                                    onContextMenu={(e) => e.preventDefault()}
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 select-none"
                                 />
+
                             </div>
                         </a>
                     </div>
                 ))}
-                
+
 
 
             </div>
 
-                        <div className="text-center mt-12">
+            <div className="text-center mt-12">
                 <a href="https://drive.google.com/drive/folders/11wOsA1eR6LEP843K-jKxAiJ-EpACJqsy?usp=drive_link"
                     target="_blank"
                     className="cosmic-button w-fit flex items-center mx-auto gap-2">

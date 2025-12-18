@@ -11,6 +11,7 @@ import { CloudBackground } from "../components/CloudBackground";
 import { PosterssSection } from "../components/PostersSection";
 import { JourneySection } from "../components/JourneySection";
 import { MyProcessSection } from "../components/MyProcessSection";
+import { ShopSection } from "../components/ShopSection";
 
 
 export const Home = () =>{
@@ -33,7 +34,8 @@ export const Home = () =>{
         <JourneySection/>
         <ProjectsSection/> 
         <MyProcessSection/>
-        <PosterssSection/>
+        {/* <PosterssSection/> */}
+        <ShopSection/>
         <ContactSection />
        </main>
 

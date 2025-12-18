@@ -18,7 +18,7 @@ const journeyTimeline = [
     {
         type: "text",
         content:
-            "I always drew and created for fun, I used to do pencil sketches, doodles, and even small video edits. When I got a mobile phone, i discovered about digital art and animations. Like every artist, I started in 'Ibis paint' and I did small animations in 'Flipaclip'. i did a lot of animations and doodles. But at that time I was doing it out of curiosity like a toddler. With no stylus or proper references at that time, I'm still proud of these artworks.🐣"
+            "I always drew and created for fun, I used to do pencil sketches, doodles, and even small video edits. When I got a smart phone, I discovered about digital art and animations. Like every artist, I started in 'Ibis paint' and I did small animations in 'Flipaclip'. I did a lot of animations and doodles. But at that time I was doing it out of curiosity like a toddler. With no stylus or proper references used, I'm still proud of those artworks.🐣"
     },
     {
         type: "media",
@@ -84,7 +84,7 @@ const journeyTimeline = [
     {
         type: "text",
         content:
-            "Although I was so focused on learning, art was always an escape from my real life and responsibilities. It was at this time, I really learned about stylizations, that stylization is something that distinguishes one's art from others. Mainly inspired from Samdoesarts I started to work on my stylizations more. Apart from that, i started do incorporate my culture (South Indian) into my artworks mainly by sarees. And that really helped with my motivation to go further, because when I started incorporating this culture I started getting more likes on Instagram. Then I started drawing more sarees😅. It was at that time I realised I could do things. But I still thought i deserved more and I was not getting it, so self doubt followed me everywhere.🌾"
+            "Although I was so focused on learning, art was always an escape from my real life and responsibilities. It was at this time, I really learned about stylizations, that stylization is something that distinguishes one's art from others. Mainly inspired from Samdoesarts I started to work on my stylizations more. Apart from that, I started to incorporate my culture (South Indian) into my artworks mainly by sarees. And that really helped with my motivation to go further, because when I started incorporating this culture I started getting more likes on Instagram. Then I started drawing more sarees😅. It was at that time I realised I could do things. But I still thought i deserved more and I was not getting it, so self doubt followed me everywhere.🌾"
     },
 
     {
@@ -113,9 +113,9 @@ const journeyTimeline = [
         type: "media",
         title: "2024",
         media: [
-            { src: "Journey/2024-1.mp4", kind: "video" },
-            { src: "Journey/2024-2.mp4", kind: "video" },
-            { src: "Journey/2024-3.mp4", kind: "video" },
+            { src: "Journey/2024-1 comp.mp4", kind: "video" },
+            { src: "Journey/2024-2 comp.mp4", kind: "video" },
+            { src: "Journey/2024-3 comp.mp4", kind: "video" },
             { src: "Journey/2024-4.png", kind: "image" },
             { src: "Journey/2024-5.png", kind: "image" },
             { src: "Journey/2024-6.png", kind: "image" },
@@ -135,9 +135,9 @@ const journeyTimeline = [
         type: "media",
         title: "2025",
         media: [
-            { src: "Journey/2025-1.mp4", kind: "video" },
-            { src: "Journey/2025-2.mp4", kind: "video" },
-            { src: "Journey/2025-3.mp4", kind: "video" },
+            { src: "Journey/2025-1 comp.mp4", kind: "video" },
+            { src: "Journey/2025-2 comp.mp4", kind: "video" },
+            { src: "Journey/2025-3 comp.mp4", kind: "video" },
             { src: "Journey/2025-4.png", kind: "image" },
             { src: "Journey/2025-5.png", kind: "image" },
             { src: "Journey/2025-6.png", kind: "image" },
@@ -166,7 +166,7 @@ export const JourneySection = () => {
                         }`}
                     initial={false}
                     animate={{
-                        maxHeight: expanded ? 40000 : 160,
+                        maxHeight: expanded ? 40000 : 360,
                     }}
                     transition={{
                         duration: 0.6,
@@ -224,8 +224,12 @@ export const JourneySection = () => {
                                                             <img
                                                                 src={m.src}
                                                                 alt={`${item.title} ${i + 1}`}
-                                                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                                                draggable={false}
+                                                                onDragStart={(e) => e.preventDefault()}
+                                                                onContextMenu={(e) => e.preventDefault()}
+                                                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 select-none"
                                                             />
+
                                                         )}
 
                                                         {m.kind === "video" && (
@@ -236,8 +240,14 @@ export const JourneySection = () => {
                                                                 muted
                                                                 playsInline
                                                                 preload="metadata"
-                                                                className="w-full h-full object-cover"
+                                                                controls={false}
+                                                                controlsList="nodownload noremoteplayback"
+                                                                disablePictureInPicture
+                                                                draggable={false}
+                                                                onContextMenu={(e) => e.preventDefault()}
+                                                                className="w-full h-full object-cover select-none"
                                                             />
+
                                                         )}
 
                                                     </div>

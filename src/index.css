@@ -336,6 +336,13 @@ individual cloud
   text-shadow: 0 0 25px rgba(255,164,96,.6);
 }
 
+
+@utility text-glowextreme{
+  @apply relative;
+  text-shadow: 0 0 38px rgba(0,170,255,.9);
+}
+
+
 @utility card-hover{
   @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
 }

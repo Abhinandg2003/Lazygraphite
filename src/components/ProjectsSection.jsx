@@ -17,58 +17,58 @@ const projects = [
     {
         id: 3,
         title: "Kamala🪷",
-        image: "Projects/Nalini.png",
+        image: "Projects/Nalini comp.png",
         demoUrl: "https://www.instagram.com/p/DSU0fKnD_sZ/",
     },
-        {
+    {
         id: 4,
         title: "Maya🦋",
         image: "Projects/Maya.png",
         demoUrl: "https://www.instagram.com/p/DRhTStND7lz/",
     },
-            {
+    {
         id: 5,
         title: "Layla🪐",
         image: "Projects/Layla.png",
         demoUrl: "https://www.instagram.com/p/C4W2YBpvaFg/",
     },
-            {
+    {
         id: 6,
         title: "Muse🌌",
         image: "Projects/Muse.png",
         demoUrl: "https://www.instagram.com/p/DObDtMUj35e/",
     },
-            {
+    {
         id: 7,
         title: "Rebirth🌕",
         image: "Projects/Rebirth.png",
         demoUrl: "https://www.instagram.com/p/DMK2tqtvcgr/",
     },
-            {
+    {
         id: 8,
         title: "Indu🌿",
         image: "Projects/Indu.png",
         demoUrl: "https://www.instagram.com/p/DHyU3kEPQvD/",
     },
-            {
+    {
         id: 9,
         title: "Nirvana🌸",
         image: "Projects/Nirvana.png",
         demoUrl: "https://www.instagram.com/p/DGanyqHPOcp/",
     },
-            {
+    {
         id: 10,
         title: "Meadows🍃",
         image: "Projects/Meadows.png",
         demoUrl: "https://www.instagram.com/p/DAgRbOVzE9N/",
     },
-            {
+    {
         id: 11,
         title: "Lucid🪷",
         image: "Projects/Lucid.png",
         demoUrl: "https://www.instagram.com/p/C9-KU-SPTOR/",
     },
-            {
+    {
         id: 12,
         title: "Gaze🌌",
         image: "Projects/Gaze.png",
@@ -91,33 +91,37 @@ export const ProjectsSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project) => (
-  <div
-    key={project.id}
-    className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
-  >
-    <a
-      href={project.demoUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block"
-    >
-      <div className="aspect-[4/5] overflow-hidden">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-      </div>
+                    <div
+                        key={project.id}
+                        className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+                    >
+                        <a
+                            href={project.demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block"
+                        >
+                            <div className="aspect-[4/5] overflow-hidden">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    draggable={false}
+                                    onDragStart={(e) => e.preventDefault()}
+                                    onContextMenu={(e) => e.preventDefault()}
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 select-none"
+                                />
 
-      <div className="p-6">
-<h3 className="text-2xl font-artist font-semibold tracking-wide mb-1 font-bold mb-1 group-hover:text-primary transition-colors">
-  {project.title}
-</h3>
+                            </div>
 
-      </div>
-    </a>
-  </div>
-))}
+                            <div className="p-6">
+                                <h3 className="text-2xl font-artist font-semibold tracking-wide mb-1 font-bold mb-1 group-hover:text-primary transition-colors">
+                                    {project.title}
+                                </h3>
+
+                            </div>
+                        </a>
+                    </div>
+                ))}
 
 
             </div>
