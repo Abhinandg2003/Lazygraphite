@@ -1,7 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Mail } from "lucide-react";
-import {  Instagram, MailIcon,Download } from "lucide-react";
+import {  Instagram, MailIcon,Download, } from "lucide-react";
+import { DiGoogleDrive } from "react-icons/di";
 
 
 
@@ -51,8 +52,8 @@ const posters = [
 
 const calendars = [
   { title: "January 2025", src: "Shop/Mockup cover comp.png" },
-  { title: "February 2025", src: "Shop/Mockup December comp.png" },
-  { title: "March 2025", src: "Shop/Mockup july comp.png" },
+  { title: "February 2025", src: "Shop/Mockup july comp.png" },
+  { title: "March 2025", src: "Shop/Mockup December comp.png" },
 ];
 
 const fade = {
@@ -139,29 +140,17 @@ export const ShopSection = () => {
                     </motion.p>
         </AnimatePresence>
 
-         <h3 className="text-2xl font-bold text-center text-foreground text-glowextreme  ">
-                                            400 Rupees + (Shipping Charge)
-                                        </h3>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-0 text-center items-center">
           <a
-            href="https://www.instagram.com/lazy_graphite?igsh=MTdibHc4aHF2b2d1Zg=="
+            href="https://drive.google.com/drive/folders/1HCXY2lvZjt9Co0rRUbkEmd9iBDlNWKT1?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="cosmic-button w-fit flex items-center  gap-2"
           >
-            DM me to order <Instagram size={20} />
+            Download For Free <Download size={20} />
             
-          </a>
-
-          <a
-            href="mailto:lazygraphite@gmail.com"
-            className="cosmic-button w-fit flex items-center  gap-2"
-            
-          >
-            Mail me to order  <MailIcon size={20} />
-           
           </a>
         </div>
   <h3 className="text-2xl font-bold text-center text-foreground pt-16">
@@ -203,7 +192,7 @@ export const ShopSection = () => {
                 <a href="https://drive.google.com/drive/folders/11wOsA1eR6LEP843K-jKxAiJ-EpACJqsy?usp=drive_link"
                     target="_blank"
                     className="cosmic-button w-fit flex items-center mx-auto gap-2">
-                    Download My Posters for free <Download size={20} />
+                    Download My Posters For Free <Download size={20} />
 
                 </a>
             </div>

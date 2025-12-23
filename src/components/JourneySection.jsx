@@ -285,7 +285,7 @@ export const JourneySection = () => {
                                 exit={{ opacity: 0, y: -6 }}
                                 transition={{ duration: 0.25 }}
                             >
-                                {expanded ? "Show less" : "Read more"}
+                                {expanded ? "Show Less" : "Read More"}
                             </motion.span>
                         </AnimatePresence>
                     </button>
