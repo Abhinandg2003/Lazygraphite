@@ -2,11 +2,19 @@ import { useEffect, useState } from "react";
 
 export const StarBackground = () => {
   const [stars, setStars] = useState([]);
-  const [isDark, setIsDark] = useState(
-    document.documentElement.classList.contains("dark")
-  );
+  const [isDark, setIsDark] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
+  // Wait until component is mounted (CRITICAL)
   useEffect(() => {
+    setMounted(true);
+    setIsDark(document.documentElement.classList.contains("dark"));
+  }, []);
+
+  // Watch for theme changes
+  useEffect(() => {
+    if (!mounted) return;
+
     const observer = new MutationObserver(() => {
       setIsDark(document.documentElement.classList.contains("dark"));
     });
@@ -17,10 +25,14 @@ export const StarBackground = () => {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [mounted]);
 
+  // Generate stars only in dark mode
   useEffect(() => {
-    if (!isDark) return;
+    if (!mounted || !isDark) {
+      setStars([]);
+      return;
+    }
 
     generateStars();
 
@@ -28,7 +40,7 @@ export const StarBackground = () => {
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, [isDark]);
+  }, [isDark, mounted]);
 
   const generateStars = () => {
     const numberOfStars = Math.floor(
@@ -51,20 +63,20 @@ export const StarBackground = () => {
     setStars(newStars);
   };
 
-  // 🌞 No stars in light mode
-  if (!isDark) return null;
+  // 🌞 No stars in light mode or before mount
+  if (!mounted || !isDark) return null;
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
       {stars.map((star) => (
         <div
           key={star.id}
           className="star"
           style={{
-            width: star.size + "px",
-            height: star.size + "px",
-            left: star.x + "%",
-            top: star.y + "%",
+            width: `${star.size}px`,
+            height: `${star.size}px`,
+            left: `${star.x}%`,
+            top: `${star.y}%`,
             opacity: star.opacity,
             animation: `
               pulse-subtle ${star.animationDuration}s ease-in-out infinite,

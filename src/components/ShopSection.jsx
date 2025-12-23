@@ -46,6 +46,12 @@ const posters = [
         link: "https://drive.google.com/file/d/1qNaSD5IuRicTu2DuyNSm1-mopkfg7_oR/view?usp=drive_link"
     },
 
+        {
+        id: 8,
+        image: "Posters/Maya.png",
+        link: "https://drive.google.com/file/d/1xbkNsdNVq7fhAEyE7vIfbCFZFyKaFh_c/view?usp=sharing"
+    },
+
 ]
 
 
@@ -77,8 +83,8 @@ export const ShopSection = () => {
   const item = calendars[index];
 
   return (
-    <section id="shop" className="py-24 px-4">
-      <div className="max-w-xl mx-auto text-center space-y-8">
+    <section id="shop" className="py-24 px-4 relative z-10">
+      <div className="max-w-xl mx-auto text-center space-y-8 ">
 
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold">
@@ -154,11 +160,11 @@ export const ShopSection = () => {
           </a>
         </div>
   <h3 className="text-2xl font-bold text-center text-foreground pt-16">
-                                            My Posters
+                                            Posters
                                         </h3>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posters.map((poster) => (
                     <div
                         key={poster.id}
