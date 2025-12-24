@@ -50,7 +50,7 @@ export const ShopSection = () => {
 
   return (
     <section id="shop" className="py-24 px-4 relative z-10">
-      <div className="max-w-xl mx-auto text-center space-y-8 ">
+      <div className="max-w-5xl mx-auto text-center space-y-8 ">
 
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold">
@@ -62,7 +62,7 @@ export const ShopSection = () => {
         </h3>
 
         {/* Carousel */}
-        <div className="relative mx-auto w-[260px] sm:w-[450px] aspect-[6/5] pb-">
+        <div className="relative mx-auto w-[260px] sm:w-[450px] aspect-[6/5]">
 
           {/* Left arrow */}
           <button
@@ -117,16 +117,24 @@ export const ShopSection = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-0 text-center items-center">
           <a
             href="https://drive.google.com/file/d/1z1RMJ01WIxx0b4yHleDlC0IXk4wPf6pb/view?usp=sharing"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="cosmic-button w-fit flex items-center gap-2" 
-            >
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cosmic-button w-fit flex items-center gap-2"
+          >
             Download For Free <Download size={20} />
           </a>
 
+
+
         </div>
-        <h3 className="text-2xl font-bold text-center text-foreground pt-16">
-          Posters
+
+        <div className="flex justify-center py-12">
+          <div className="w-screen border-t border border-foreground/40" />
+        </div>
+
+
+        <h3 className="text-2xl font-bold text-center text-foreground pt-0">
+          My Posters
         </h3>
 
 
@@ -160,7 +168,7 @@ export const ShopSection = () => {
 
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 space-y-2">
           <a
             href={`${import.meta.env.BASE_URL}downloads/Lazygraphite_Posters.zip`}
             download
@@ -169,7 +177,9 @@ export const ShopSection = () => {
             Download My Posters For Free <Download size={20} />
           </a>
 
-
+          <p className="text-muted-foreground max-w-2xl mt-5 mx-auto">
+            Credit appreciated, not required💙
+          </p>
         </div>
 
 
