@@ -62,7 +62,7 @@ export const ShopSection = () => {
         </h3>
 
         {/* Carousel */}
-        <div className="relative mx-auto w-[260px] sm:w-[450px] aspect-[1/1] pb-">
+        <div className="relative mx-auto w-[260px] sm:w-[450px] aspect-[6/5] pb-">
 
           {/* Left arrow */}
           <button
