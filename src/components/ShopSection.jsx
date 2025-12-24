@@ -116,10 +116,11 @@ export const ShopSection = () => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-0 text-center items-center">
           <a
-            href={`${import.meta.env.BASE_URL}downloads/Calendar_2026.pdf`}
-            download
-            className="cosmic-button w-fit flex items-center gap-2"
-          >
+            href="https://drive.google.com/file/d/1z1RMJ01WIxx0b4yHleDlC0IXk4wPf6pb/view?usp=sharing"
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="cosmic-button w-fit flex items-center gap-2" 
+            >
             Download For Free <Download size={20} />
           </a>
 
