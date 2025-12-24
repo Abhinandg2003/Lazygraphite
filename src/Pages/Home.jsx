@@ -21,17 +21,17 @@ import { useEffect, useState } from "react";
 
 export const Home = () =>{
 
-    useEffect(() => {
-  const storedTheme = localStorage.getItem("theme");
+//     useEffect(() => {
+//   const storedTheme = localStorage.getItem("theme");
 
-  if (storedTheme) {
-    document.documentElement.classList.toggle("dark", storedTheme === "dark");
-  } else {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.classList.toggle("dark", prefersDark);
-    localStorage.setItem("theme", prefersDark ? "dark" : "light");
-  }
-}, []);
+//   if (storedTheme) {
+//     document.documentElement.classList.toggle("dark", storedTheme === "dark");
+//   } else {
+//     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+//     document.documentElement.classList.toggle("dark", prefersDark);
+//     localStorage.setItem("theme", prefersDark ? "dark" : "light");
+//   }
+// }, []);
 
 
     return<div className="min-h-screen  scene text-foreground overflow-x-hidden">

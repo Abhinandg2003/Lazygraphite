@@ -6,10 +6,13 @@ export const StarBackground = () => {
   const [mounted, setMounted] = useState(false);
 
   // Wait until component is mounted (CRITICAL)
-  useEffect(() => {
+useEffect(() => {
+  requestAnimationFrame(() => {
     setMounted(true);
     setIsDark(document.documentElement.classList.contains("dark"));
-  }, []);
+  });
+}, []);
+
 
   // Watch for theme changes
   useEffect(() => {
