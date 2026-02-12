@@ -147,6 +147,7 @@
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
+    --formtext: #000000;
   }
 
 .dark {
@@ -159,6 +160,7 @@
   --primary-foreground:230 35% 90.5%;
 
   --border: 230 25% 18%;
+  --formtext: #FFFFFF;
 }
 
 /* Aurora Base */
@@ -395,5 +397,14 @@ body {
   transition: background-color 0.8s ease, color 0.6s ease;
 }
 
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: inherit !important;
+  transition: background-color 5000s ease-in-out 0s;
+} */
 
 

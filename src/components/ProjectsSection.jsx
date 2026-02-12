@@ -70,8 +70,8 @@ const projects = [
     },
     {
         id: 12,
-        title: "Gaze🌌",
-        image: "Projects/Gaze.png",
+        title: "Sujata🕊️",
+        image: "Projects/Sujata comp.png",
         demoUrl: "https://www.instagram.com/p/DQ6vYS5j9M5/",
     },
 ]

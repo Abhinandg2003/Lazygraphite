@@ -21,6 +21,9 @@ import { useEffect, useState } from "react";
 
 export const Home = () =>{
 
+
+
+
 //     useEffect(() => {
 //   const storedTheme = localStorage.getItem("theme");
 
@@ -55,6 +58,7 @@ export const Home = () =>{
         <MyProcessSection/>
         {/* <PosterssSection/> */}
         <ShopSection/>
+        
         <ContactSection />
        </main>
 
