@@ -48,7 +48,7 @@ export const MyProcessSection = () => {
                 <div
                     className="
             relative mx-auto overflow-hidden rounded-xl
-            w-[350px] sm:w-[400px] md:w-[320px]
+            w-[300px] sm:w-[350px] md:w-[320px]
             aspect-[4/5]
             bg-card
           "

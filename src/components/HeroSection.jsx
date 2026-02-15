@@ -5,17 +5,37 @@ export const HeroSection = () => {
     <section 
     id="home" 
     className="relative min-h-screen flex flex-col items-center justify-center px-4">
-    <div className="container max-w-4xl mx-auto text-center z-10">
+
+
+<img
+  src="Projects/heromeadow.png"
+  className="absolute inset-0 h-full w-full object-cover 
+  object-[53%_center] sm:object-center
+  [mask-image:linear-gradient(to_bottom,black_50%,black_25%,transparent)] 
+  [-webkit-mask-image:linear-gradient(to_bottom,black_50%,black_25%,transparent)]"
+/>
+
+
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-yellow-200/20 via-yellow-200/10 to-black/0" />
+
+        {/* Optional: Extra dark overlay for readability */}
+
+        {/* Bottom fade overlay (video fades into page bg) */}
+
+
+    <div className="container max-w-4xl text-left px-2 pr-30 sm:px-6 lg:ml-24 z-10 text-white">
         <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                <span className="opacity-0 animate-fade-in-delay-1">Hi, I'm</span>
-                <span className="text-primary opacity-0 animate-fade-in-delay-1"> Abhinand</span>
-                <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-1"> G</span>
+                <span className="opacity-0 animate-fade-in-delay-1">Hi, I'm</span><br />
+                <span className=" opacity-0 animate-fade-in-delay-1"> Abhinand</span>
+                <span className=" ml-2 opacity-0 animate-fade-in-delay-1"> G</span>
                 <span className=" block opacity-0 animate-fade-in-delay-2"> also known as</span>
-                <span className=" block text-primary opacity-0 animate-fade-in-delay-4 text-glow"> LazyGraphite</span>
+                <span className=" block text-primary opacity-0 animate-fade-in-delay-4 "> LazyGraphite</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-                Just an aspiring digital artist who loves turning emotions into little stories.
+            <p className="text-lg md:text-xl text-white max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
+                Just an aspiring digital artist who loves turning <br /> emotions into little stories.
             </p>
 
             <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -24,13 +44,6 @@ export const HeroSection = () => {
 
         </div>
         </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-muted-foreground mb-2">
-            Scroll
-            </span>
-            <ArrowDown className="h-5 w-5 text-primary"/>
-            </div>
     </section>
     );
 }

@@ -77,7 +77,7 @@ const projects = [
 ]
 
 export const ProjectsSection = () => {
-    return <section id="projects" className="py-24 px-4 relative">
+    return <section id="projects" className="py-24 relative">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center"> Featured <span className="text-primary" >
                 Works
@@ -101,7 +101,7 @@ export const ProjectsSection = () => {
                             rel="noopener noreferrer"
                             className="block"
                         >
-                            <div className="aspect-[4/5] overflow-hidden">
+                            <div className="aspect-[5/6] overflow-hidden">
                                 <img
                                     src={project.image}
                                     alt={project.title}

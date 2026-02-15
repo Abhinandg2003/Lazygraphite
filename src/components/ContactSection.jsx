@@ -128,8 +128,8 @@ export const ContactSection =() =>{
 
 
 
-    return <section id="contact" className="py-24 px-4 relative">
-        <div className="container mx-auto max-w-6xl px-4">
+    return <section id="contact" className="pt-24 pb-10 px-0  bg-secondary/30">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             Contact <span className="text-primary"> 
                 Me
@@ -137,8 +137,8 @@ export const ContactSection =() =>{
         </h2>
 
         {/* CONSULTATION FORM SECTION */}
-<section className="pb-10 pt-5">
-  <div className="container mx-auto" id="consultation">
+<section className="pb-10">
+  <div className="w-full" id="consultation">
     <div className="rounded-lg border border-foreground  p-8 sm:p-10 shadow-sm">
       <h3 className="text-3xl font-semibold tracking-tight text-foreground">
         Commission Requests
@@ -275,21 +275,19 @@ export const ContactSection =() =>{
 
 
 
-                <div className="space-y-6 justify-center">
-                    <div className="flex justify-center space-x-4">
-                        <div className="p-3 rounded-full bg-primary/10">
-                        <Mail className= "h-6 w-6 text-primary"/>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:lazygraphite@gmail.com" 
-                            target = "_blank"
-                            className="text-muted-foreground hover:text-primary transition-colors">lazygraphite@gmail.com</a>
-                        </div>
-
-                    </div>
-
-                </div>
+                 {/* Email */}
+  <div className="flex flex-col items-center gap-1">
+    <div className="flex items-center gap-2 text-sm text-foreground font-semibold" >
+      <Mail className="h-5 w-5 bg-" />
+      <span>Email</span>
+    </div>
+    <a
+      href="mailto:lazygraphite@gmail.com"
+      className="text-base font-medium hover:text-primary transition-colors"
+    >
+      lazygraphite@gmail.com
+    </a>
+  </div>
 
                 <div className="pt-8">
                     <h4 className="mb-4">

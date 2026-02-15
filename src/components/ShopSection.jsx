@@ -49,11 +49,11 @@ export const ShopSection = () => {
   const item = calendars[index];
 
   return (
-    <section id="shop" className="py-24 px-4 relative z-10">
+    <section id="shop" className="py-5 px-4 relative z-10">
       <div className="max-w-5xl mx-auto text-center space-y-8 ">
 
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold">
+        <h2 className="text-3xl md:text-4xl font-bold mb-2">
           My <span className="text-primary">Shop</span>
         </h2>
 
