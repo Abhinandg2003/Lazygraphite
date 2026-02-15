@@ -25,7 +25,9 @@ export const HeroSection = () => {
         {/* Bottom fade overlay (video fades into page bg) */}
 
 
-    <div className="container max-w-4xl text-left px-2 pr-25 sm:px-6 lg:ml-24 z-10 text-white">
+<div className="container max-w-4xl text-left px-2 pr-25 sm:px-6 
+               lg:ml-24 z-10 text-white
+               translate-y-[-3rem] sm:translate-y-[-1rem] md:translate-y-0">
         <div className="space-y-1">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 <span className="opacity-0 animate-fade-in-delay-1">Hi, I'm</span><br />
