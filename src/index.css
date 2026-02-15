@@ -25,6 +25,7 @@
   --color-glass: hsl(var(--glass));
 
 
+
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 2s ease-in-out infinite;
   --animate-fade-in: fade-in 0.7s ease-out forwards;
@@ -150,6 +151,7 @@
     --border: 214 32% 91%;
     --formtext: #000000;
     --glass: 0 0% 100%;
+    --reddy: #FA5053;
   }
 
 .dark {
@@ -164,6 +166,7 @@
   --border: 230 25% 18%;
   --formtext: #FFFFFF;
   --glass: 0 0% 100%;
+  --reddy: #FA5053;
 }
 
 /* Aurora Base */
