@@ -3,16 +3,12 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from "path";
 
-// https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   base: mode === 'gh' ? '/Lazygraphite/' : '/',
-
-  plugins: [react(),tailwindcss()],
-  resolve:{
-    alias:{
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
       "@": path.resolve(__dirname, "./src"),
-       },
+    },
   },
-});
-
-
+}));
