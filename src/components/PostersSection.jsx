@@ -4,38 +4,38 @@ import { ArrowRight, ExternalLink, Github, Instagram, Download } from "lucide-re
 const posters = [
     {
         id: 1,
-        image: "Posters/Blues.png",
+        image: "Posters/Blues.jpg",
         link: "https://drive.google.com/file/d/1UGpCfE0GOSNlHcGBt3T5ptxPf8uW2LXe/view?usp=drive_link"
     },
     {
         id: 2,
-        image: "Posters/Layla.png",
+        image: "Posters/Layla.jpg",
         link: "https://drive.google.com/file/d/1adiKFxnV3Ya-mOstYYcGS1_30iabNSQN/view?usp=drive_link"
     },
     {
         id: 3,
-        image: "Posters/Lucid.png",
+        image: "Posters/Lucid.jpg",
         link: "https://drive.google.com/file/d/1bupY2TLC-vEF2rF1jKrGy5KipBNNeuBK/view?usp=drive_link"
     },
 
     {
         id: 4,
-        image: "Posters/Meadows.png",
+        image: "Posters/Meadows.jpg",
         link: "https://drive.google.com/file/d/13nv_ACPBqiAI85HbPGXmFZjahS1YGqEk/view?usp=drive_link"
     },
     {
         id: 5,
-        image: "Posters/Zephyr.png",
+        image: "Posters/Zephyr.jpg",
         link: "https://drive.google.com/file/d/1ocvj94N8_vBYi1WG99w-PH3OHsxJKr1d/view?usp=drive_link"
     },
     {
         id: 6,
-        image: "Posters/Wisdom.png",
+        image: "Posters/Wisdom.jpg",
         link: "https://drive.google.com/file/d/1vpxTUbm9iYHobQinXahGZctEDUeQXr0T/view?usp=drive_link"
     },
     {
         id: 7,
-        image: "Posters/Kavya.png",
+        image: "Posters/Kavya.jpg",
         link: "https://drive.google.com/file/d/1qNaSD5IuRicTu2DuyNSm1-mopkfg7_oR/view?usp=drive_link"
     },
 

@@ -4,12 +4,12 @@ import { useRef } from "react";
 
 
 const processStages = [
-    { label: "Sketch", src: "Process/Sketch.png" },
-    { label: "Line", src: "Process/Line.png" },
-    { label: "Base Color", src: "Process/BaseColor.png" },
-    { label: "Shadow & Light", src: "Process/Shadowlight.png" },
-    { label: "Render", src: "Process/Render.png" },
-    { label: "Edit", src: "Process/Edit.png" },
+    { label: "Sketch", src: "Process/Sketch.jpg" },
+    { label: "Line", src: "Process/Line.jpg" },
+    { label: "Base Color", src: "Process/Basecolor.jpg" },
+    { label: "Shadow & Light", src: "Process/Shadowlight.jpg" },
+    { label: "Render", src: "Process/Render.jpg" },
+    { label: "Edit", src: "Process/Edit.jpg" },
 ];
 
 const crossDissolve = {

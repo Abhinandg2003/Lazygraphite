@@ -11,7 +11,7 @@ export const Footer = ()=> {
             </a>
 <div className="text-sm text-muted-foreground mb-2 flex  items-center  justify-center pb-6 pt-6">
     <span className="flex items-center gap-1" >
-        <Copyright size={15}/>LazyGraphite
+        <Copyright size={15}/>Lazygraphite
     </span>
 
 </div>

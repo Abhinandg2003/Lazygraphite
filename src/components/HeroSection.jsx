@@ -8,7 +8,7 @@ export const HeroSection = () => {
 
 
 <img
-  src="Projects/heromeadow.png"
+  src="Projects/heromeadow.jpg"
   className="absolute inset-0 h-full w-full object-cover 
   object-[53%_center] sm:object-center
   [mask-image:linear-gradient(to_bottom,black_50%,black_25%,transparent)] 

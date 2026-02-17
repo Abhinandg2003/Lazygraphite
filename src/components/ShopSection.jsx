@@ -9,14 +9,14 @@ import { DiGoogleDrive } from "react-icons/di";
 
 
 const posters = [
-  { id: 1, image: "Posters/Blues.png", link: `${import.meta.env.BASE_URL}downloads/Blues.png` },
-  { id: 2, image: "Posters/Layla.png", link: `${import.meta.env.BASE_URL}downloads/Layla.png` },
-  { id: 3, image: "Posters/Lucid.png", link: `${import.meta.env.BASE_URL}downloads/Lucid.png` },
-  { id: 4, image: "Posters/Meadows.png", link: `${import.meta.env.BASE_URL}downloads/Meadows.png` },
-  { id: 5, image: "Posters/Zephyr.png", link: `${import.meta.env.BASE_URL}downloads/Zephyr.png` },
-  { id: 6, image: "Posters/Wisdom.png", link: `${import.meta.env.BASE_URL}downloads/Wisdom.png` },
-  { id: 7, image: "Posters/Kavya.png", link: `${import.meta.env.BASE_URL}downloads/Kavya.png` },
-  { id: 8, image: "Posters/Maya.png", link: `${import.meta.env.BASE_URL}downloads/Maya.png` },
+  { id: 1, image: "Posters/Blues.jpg", link: `${import.meta.env.BASE_URL}downloads/Blues.png` },
+  { id: 2, image: "Posters/Layla.jpg", link: `${import.meta.env.BASE_URL}downloads/Layla.png` },
+  { id: 3, image: "Posters/Lucid.jpg", link: `${import.meta.env.BASE_URL}downloads/Lucid.png` },
+  { id: 4, image: "Posters/Meadows.jpg", link: `${import.meta.env.BASE_URL}downloads/Meadows.png` },
+  { id: 5, image: "Posters/Zephyr.jpg", link: `${import.meta.env.BASE_URL}downloads/Zephyr.png` },
+  { id: 6, image: "Posters/Wisdom.jpg", link: `${import.meta.env.BASE_URL}downloads/Wisdom.png` },
+  { id: 7, image: "Posters/Kavya.jpg", link: `${import.meta.env.BASE_URL}downloads/Kavya.png` },
+  { id: 8, image: "Posters/Maya.jpg", link: `${import.meta.env.BASE_URL}downloads/Maya.png` },
 ];
 
 
@@ -178,7 +178,7 @@ export const ShopSection = () => {
           </a>
 
           <p className="text-muted-foreground max-w-2xl mt-5 mx-auto">
-            Credit appreciated, not required💙
+            Credits are appreciated🫂
           </p>
         </div>
 
